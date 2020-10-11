@@ -19,3 +19,36 @@ yarn create next-app --example with-react-bootstrap with-react-bootstrap-app
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+## Additional changes made by me (guilherme-araujo)
+
+    yarn add typescript @types/react @types/node -D
+
+Rename files .jsx to .tsx
+
+    yarn add eslint -D
+    yarn eslint --init (fix npm to yarn package manager)
+    yarn add prettier eslint-plugin-prettier eslint-config-prettier -D
+
+.eslintrc.json from https://github.com/rocketseat-content/react-nextjs-typescript-structure/blob/master/.eslintrc.json
+
+.eslintignore contents
+
+    node_modules
+    .next
+    /*.js
+
+.prettier.config.js from https://github.com/rocketseat-content/react-nextjs-typescript-structure/blob/master/prettier.config.js
+
+.editorconfig contents:
+
+    root = true
+
+    [*]
+    indent_style = space
+    indent_size = 2
+    charset = utf-8
+    end_of_line = lf
+    trim_trailing_whitespace = true
+    insert_final_newline = true
+
